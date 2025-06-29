@@ -1,0 +1,4 @@
+matplotlib==3.10.3
+pyts==0.13.0
+pandas==2.2.3
+xlrd==2.0.1

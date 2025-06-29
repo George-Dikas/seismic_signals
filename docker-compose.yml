@@ -1,0 +1,13 @@
+services: 
+  seismic_signal_analysis:
+    build:
+      context: ./src/
+      dockerfile: Dockerfile
+    container_name: seismic_signal_analysis  
+    tty: true
+    # command: ["tail", "-f", "/dev/null"]
+    develop:
+      watch:
+        - path: src/
+          target: /app
+          action: sync
